@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "QNTMEX Wallet",
+    "slug": "qntmex-wallet",
+    "version": "4.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#040302",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#040302"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.qntmex.wallet",
+      "buildNumber": "4",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Camera is used to scan QR codes for wallet addresses",
+        "NSFaceIDUsageDescription": "Face ID is used to unlock your wallet securely"
+      }
+    },
+    "android": {
+      "package": "com.qntmex.wallet",
+      "versionCode": 4,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#040302"
+      },
+      "permissions": [
+        "CAMERA",
+        "USE_BIOMETRIC",
+        "USE_FINGERPRINT",
+        "VIBRATE"
+      ]
+    },
+    "plugins": [
+      "expo-camera",
+      "expo-local-authentication",
+      "expo-secure-store",
+      [
+        "expo-barcode-scanner",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access camera to scan QR codes."
+        }
+      ]
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
