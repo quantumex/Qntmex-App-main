@@ -33,6 +33,7 @@
     "react-native-reanimated": "^4.4.1",
     "react-native-svg": "^15.15.5",
     "react-native-webview": "^13.16.1",
+    "react-native-worklets-core": "^1.6.3",
     "readable-stream": "^4.7.0",
     "text-encoding": "^0.7.0",
     "tweetnacl": "^1.0.3",
